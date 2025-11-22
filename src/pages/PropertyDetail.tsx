@@ -46,7 +46,7 @@ const PropertyDetail = () => {
     .sort((a, b) => a.rate - b.rate);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-background py-8">
       <div className="container mx-auto px-4">
         <Link to="/catalog" className="inline-flex items-center text-primary hover:underline mb-6">
           <Icon name="ArrowLeft" className="h-4 w-4 mr-1" />
@@ -55,7 +55,7 @@ const PropertyDetail = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm mb-6">
+            <div className="bg-card rounded-lg overflow-hidden shadow-sm mb-6">
               <img
                 src={property.imageUrl}
                 alt={property.title}

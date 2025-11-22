@@ -6,7 +6,7 @@ import { banks } from '@/data/properties';
 
 const Banks = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-background py-8">
       <div className="container mx-auto px-4">
         <div className="mb-8 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -68,13 +68,13 @@ const Banks = () => {
           ))}
         </div>
 
-        <Card className="bg-gradient-to-r from-primary to-blue-600 text-white">
+        <Card className="bg-primary text-primary-foreground">
           <CardContent className="py-12 text-center">
             <Icon name="Sparkles" className="h-12 w-12 mx-auto mb-4" />
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Не знаете, какой банк выбрать?
             </h2>
-            <p className="text-lg mb-6 text-blue-100 max-w-2xl mx-auto">
+            <p className="text-lg mb-6 opacity-90 max-w-2xl mx-auto">
               Наш ИИ-ассистент поможет подобрать оптимальные условия кредитования с учетом вашей ситуации
             </p>
             <Button size="lg" variant="secondary">

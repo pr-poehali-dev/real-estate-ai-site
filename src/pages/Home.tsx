@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 md:py-32">
+      <section className="relative bg-gradient-to-br from-accent via-background to-secondary py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -37,11 +37,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 animate-fade-in">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-4">
                 <Icon name="Search" className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Умный поиск</h3>
@@ -51,7 +51,7 @@ const Home = () => {
             </div>
 
             <div className="text-center p-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-4">
                 <Icon name="Calculator" className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Расчет ипотеки</h3>
@@ -61,7 +61,7 @@ const Home = () => {
             </div>
 
             <div className="text-center p-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-4">
                 <Icon name="Zap" className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Быстрое оформление</h3>
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -105,12 +105,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Готовы найти свою квартиру?
           </h2>
-          <p className="text-lg mb-8 text-blue-100">
+          <p className="text-lg mb-8 opacity-90">
             Начните поиск прямо сейчас и получите лучшие предложения от банков
           </p>
           <Link to="/catalog">

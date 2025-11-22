@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-background py-8">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -81,10 +81,10 @@ const About = () => {
             </Card>
           </div>
 
-          <Card className="bg-primary text-white">
+          <Card className="bg-primary text-primary-foreground">
             <CardContent className="p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">Готовы начать поиск?</h2>
-              <p className="text-blue-100 mb-6">
+              <p className="opacity-90 mb-6">
                 Присоединяйтесь к тысячам людей, которые уже нашли свою квартиру через АйДом
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -95,7 +95,7 @@ const About = () => {
                   </Button>
                 </Link>
                 <a href="tel:+74951234567">
-                  <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white/20">
+                  <Button size="lg" variant="outline" className="bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20">
                     <Icon name="Phone" className="h-5 w-5 mr-2" />
                     Связаться с нами
                   </Button>
